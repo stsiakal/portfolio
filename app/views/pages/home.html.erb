@@ -1,2 +1,13 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div data-controller="dice20">
+    <%= image_tag("dice20faces.png",style: 'width: 200px; height: 200px;')%>
+    <button data-action="click->dice20#rollDice">Click me</button>
+  <div id="die1" class="dice">0</div>
+  <h2 id="status" style="clear:left; color: rgb(255, 255, 255)"></h2>
+</div>
+
+<div data-controller="story">
+    <p id='story' style="color: rgb(255, 255, 255)"><%= @story %></p>
+      <button data-action="click->story#progress" id='fight'>fight</button>
+      <button data-action="click->story#progress" id='run'>run</button>
+      <button data-action="click->story#progress" id='cry'>cry</button>
+  </div>

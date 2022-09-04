@@ -1,1 +1,19 @@
 // Specific CSS for your home-page
+body {
+  background-color: rgb(0, 0, 0)
+}
+
+.dice {
+  float: left;
+  width:50px;
+	border:rgb(0, 0, 0) 1px solid;
+	padding:50px;
+	font-size:50px;
+	text-align:center;
+	margin:10px;
+  color: rgb(255, 255, 255)
+}
+
+#fight {
+  border-radius: 50%;
+}
