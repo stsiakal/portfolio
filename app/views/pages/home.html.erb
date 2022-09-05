@@ -1,13 +1,35 @@
-<div data-controller="dice20">
-    <%= image_tag("dice20faces.png",style: 'width: 200px; height: 200px;')%>
-    <button data-action="click->dice20#rollDice">Click me</button>
-  <div id="die1" class="dice">0</div>
-  <h2 id="status" style="clear:left; color: rgb(255, 255, 255)"></h2>
-</div>
-
 <div data-controller="story">
     <p id='story' style="color: rgb(255, 255, 255)"><%= @story %></p>
       <button data-action="click->story#progress" id='fight'>fight</button>
       <button data-action="click->story#progress" id='run'>run</button>
       <button data-action="click->story#progress" id='cry'>cry</button>
+</div>
+
+<div class="content">
+  <div class="die" id="die1">
+    <figure class="face face-1"></figure>
+    <figure class="face face-2"></figure>
+    <figure class="face face-3"></figure>
+    <figure class="face face-4"></figure>
+    <figure class="face face-5"></figure>
+    <figure class="face face-6"></figure>
+    <figure class="face face-7"></figure>
+    <figure class="face face-8"></figure>
+    <figure class="face face-9"></figure>
+    <figure class="face face-10"></figure>
+    <figure class="face face-11"></figure>
+    <figure class="face face-12"></figure>
+    <figure class="face face-13"></figure>
+    <figure class="face face-14"></figure>
+    <figure class="face face-15"></figure>
+    <figure class="face face-16"></figure>
+    <figure class="face face-17"></figure>
+    <figure class="face face-18"></figure>
+    <figure class="face face-19"></figure>
+    <figure class="face face-20"></figure>
   </div>
+</div>
+
+<div data-controller="animate">
+  <button data-action="click->animate#rollDice" class="randomize" data-animate-target="button">Roll!</button>
+</div>
