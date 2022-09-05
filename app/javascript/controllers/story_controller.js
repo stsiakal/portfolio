@@ -13,7 +13,7 @@ export default class extends Controller {
     } else if (event.currentTarget.id === 'run') {
       story.innerHTML = 'mple'
     } else if (event.currentTarget.id === 'cry') {
-      story.innerHTML = 'prasino'
+    story.innerHTML = 'prasino'
     }
   }
 }

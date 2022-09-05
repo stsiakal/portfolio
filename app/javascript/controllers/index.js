@@ -4,6 +4,9 @@
 
 import { application } from "./application"
 
+import AnimateController from "./animate_controller"
+application.register("animate", AnimateController)
+
 import Dice20Controller from "./dice20_controller"
 application.register("dice20", Dice20Controller)
 
