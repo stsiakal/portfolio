@@ -12,3 +12,6 @@ application.register("dice20", Dice20Controller)
 
 import StoryController from "./story_controller"
 application.register("story", StoryController)
+
+import TypedJsController from "./typed_js_controller"
+application.register("typed-js", TypedJsController)
