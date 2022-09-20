@@ -8,14 +8,31 @@ export default class extends Controller {
   firstDay() {
     new Typed(this.element, {
       strings: [
-        "You find yourself sitting next to a bonfire. You dont know how you got here. You remember clicking this weird porfolio link...^3000",
-        "You can see the bonfire yet you cant hear the sound of it. One would think that you might have to click it.^4000",
-        'Suddently three buttons appear before you. "sigh" You just wanted to see a portfolio page, not waste your time like this.',
-        "Choose carefully for nothing is like it seems to be.",
+        "You find yourself sitting next to a bonfire. You dont know how you got here. You vaguely remember clicking this weird porfolio link...^4000",
       ],
-      typeSpeed: 60,
+      typeSpeed: 30,
       loop: false,
       fadeOut: true,
+      showCursor: false,
+      onBegin: () => {fade()},
+      onComplete: () => {secondDay()}
     });
+
+    function fade() {
+      let fade = document.getElementById('fade')
+      fade.classList.add('fadeIn')
+    }
+
+    function secondDay(){
+      new Typed(".typed", {
+        strings: [
+          "You can see the bonfire yet you cant hear the sound of it. One would think that you might have to click it.^3000",
+        ],
+        typeSpeed: 30,
+        loop: false,
+        fadeOut: true,
+        showCursor: false,
+      });
+    }
   }
 }
