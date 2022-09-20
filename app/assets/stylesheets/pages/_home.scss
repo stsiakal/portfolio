@@ -278,10 +278,11 @@ a:hover {
   margin: 20px 10px;
 }
 
-.typed-fade-out {
-}
-
 .typed {
   color: white;
   text-shadow: 1cm;
+}
+
+.typed-cursor {
+  opacity: 0;
 }

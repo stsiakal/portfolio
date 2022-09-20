@@ -10,6 +10,9 @@ application.register("animate", AnimateController)
 import Dice20Controller from "./dice20_controller"
 application.register("dice20", Dice20Controller)
 
+import SoundController from "./sound_controller"
+application.register("sound", SoundController)
+
 import StoryController from "./story_controller"
 application.register("story", StoryController)
 
