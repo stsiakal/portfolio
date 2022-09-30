@@ -1,11 +1,13 @@
-<div class="container">
-  <div class="typed">
-    <p id="typed"><span data-controller="typed-js" data-action="load@window->typed-js#firstDay"></span></p>
-  </div>
-  <div id="buttons" data-controller="story" style="display: none;">
-    <button data-action="click->story#progress" id='invastigation'>Investigate this realm</button>
-    <button data-action="click->story#progress" id='perception'>Try to understand what the message meant</button>
-    <button data-action="click->story#progress" id='escape'>I just want to see the profile, get me out</button>
+<div class="home-wrapper">
+  <div class="home-section-center">
+    <div class="typed">
+      <p id="typed"><span data-controller="typed-js" data-action="load@window->typed-js#firstDay"></span></p>
+    </div>
+    <div id="buttons" data-controller="story" style="display: none;">
+      <button data-action="click->story#progress" id='invastigation'>Investigate this realm</button>
+      <button data-action="click->story#progress" id='perception'>Try to understand what the message meant</button>
+      <%= button_to  "I just want to see the profile, get me out", about_path , method: 'get' %>
+    </div>
   </div>
 </div>
 

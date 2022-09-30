@@ -1,0 +1,213 @@
+
+.contact-wrapper {
+  width: 70% !important;
+  margin: 0% 15% !important;
+  padding: 0%;
+  display: flex;
+}
+
+.intro-description {
+  font-size: 14px;
+  text-align: left !important;
+}
+
+// iPhone
+@media(max-width: 767px) {
+  .contact-wrapper {
+    width: 90% !important;
+    margin: 0% 5% !important;
+  }
+
+  .content-contact {
+    margin-top: 100px;
+  }
+
+  .align-left {
+    text-align: left;
+  }
+
+  .header-large {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14vw !important;
+    line-height: 1em;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #EEE7E1;
+
+  }
+
+  .header {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0vh;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.75em;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  .intro-description {
+    font-size: 14px;
+    text-align: left !important;
+  }
+
+  .description-contact {
+    width: 100% !important;
+    text-align: left;
+  }
+
+}
+
+
+// iPad
+@media(min-width: 768px) {
+  .contact-wrapper {
+    width: 80% !important;
+    margin: 0% 10% !important;
+  }
+
+  .content-contact {
+    margin-top: 210px;
+  }
+
+  .align-left {
+    text-align: left;
+  }
+
+  .header-large {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14vw !important;
+    line-height: 1em;
+    font-weight: 300;
+    text-align: left !important;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #EEE7E1;
+
+  }
+
+  .header {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0vh;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.75em;
+    font-weight: 300;
+    text-align: left !important;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  .description-contact {
+    width: 100% !important;
+    font-size: 16px !important;
+    margin-left: 6px;
+  }
+
+
+}
+
+// Laptops
+@media(min-width: 1020px) {
+  .content-contact {
+    margin-top: 90px;
+  }
+
+  .align-left {
+    text-align: left;
+  }
+
+  .header-large {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14vw !important;
+    line-height: 1em;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #EEE7E1;
+
+  }
+
+  .header {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0vh;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.75em;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  .description-contact {
+    margin-left: 14px;
+    width: 100% !important;
+    font-size: 16px !important;
+  }
+
+}
+
+// Desktop
+@media(min-width: 1201px) {
+  .content-contact {
+    margin-top: 190px;
+  }
+
+  .align-left {
+    text-align: left;
+  }
+
+  .header-large {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10vw !important;
+    line-height: 1em;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0px;
+    text-transform: none;
+    color: #EEE7E1;
+
+  }
+
+  .header {
+    position: relative;
+    margin-top: 22%;
+    margin-bottom: 0vh;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.75em;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  .description-contact {
+    margin-left: 12px;
+    width: 100% !important;
+    font-size: 16px !important;
+  }
+
+
+}
+
+
+
+
+
+
+.link:hover {
+  text-decoration: line-through;
+}
+
+.link-white {
+  color: #EEE7E1
+}
+
+.link-white:hover {
+  color: #EEE7E1
+}

@@ -1,23 +1,25 @@
-<div class="fireplace" id="fade" data-controller="sound" data-action="click->sound#play">
-  <div class="blur">
-    <div class="fireplace__flame_big"></div>
+<div class="home-section-center">
+  <div class="fireplace" id="fade" data-controller="sound" data-action="click->sound#play">
+    <div class="blur">
+      <div class="fireplace__flame_big"></div>
+    </div>
+    <section class="fireplace__log"></section>
+    <section class="fireplace__log"></section>
+    <section class="fireplace__log"></section>
+    <section class="fireplace__log"></section>
+    <section class="fireplace__log"></section>
+    <section class="fireplace__log"></section>
+    <section class="fireplace__log"></section>
+    <section class="fireplace__log"></section>
+    <main class="fireplace__spark"></main>
+    <main class="fireplace__spark"></main>
+    <main class="fireplace__spark"></main>
+    <main class="fireplace__spark"></main>
+    <div class="blur fix">
+      <div class="fireplace__flame"></div>
+    </div>
+    <div class="fireplace__light"></div>
   </div>
-  <section class="fireplace__log"></section>
-  <section class="fireplace__log"></section>
-  <section class="fireplace__log"></section>
-  <section class="fireplace__log"></section>
-  <section class="fireplace__log"></section>
-  <section class="fireplace__log"></section>
-  <section class="fireplace__log"></section>
-  <main class="fireplace__spark"></main>
-  <main class="fireplace__spark"></main>
-  <main class="fireplace__spark"></main>
-  <main class="fireplace__spark"></main>
-  <div class="blur fix">
-    <div class="fireplace__flame"></div>
-  </div>
-  <div class="fireplace__light"></div>
 </div>
-
 
 <%= audio_tag("fire.mp3", loop: true, id: "fire-audio") %>

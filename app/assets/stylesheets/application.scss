@@ -10,3 +10,68 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-all {
+  max-width: 90% !important;
+  margin: 0% 5%;
+  padding: 0%
+}
+
+.bg-white {
+  background-color: #eee7e1 !important;
+  color: #ffffff !important;
+
+  ::selection {
+    background: #ffffff  !important;
+    color: #ffffff !important;
+  }
+
+  ::-moz-selection {
+    background: #ffffff  !important;
+    color: #ffffff !important;
+  }
+}
+
+.bg-black {
+  background-color: #000000 !important;
+  color: #EEE7E1 !important;
+
+  ::selection {
+    background: #ffffff  !important;
+    color: #ffffff !important;
+  }
+
+  ::-moz-selection {
+    background: #eee7e1  !important;
+    color: #ffffff !important;
+  }
+}
+
+.black {
+  color: #ffffff !important;
+}
+
+.white {
+  color: #ffffff !important;
+}
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */

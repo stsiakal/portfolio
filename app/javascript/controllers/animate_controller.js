@@ -3,9 +3,7 @@ import { Controller } from "@hotwired/stimulus"
 // Connects to data-controller="animate"
 export default class extends Controller {
   static targets = ['button']
-  connect() {
-    console.log('connected')
-  }
+  connect() {}
 
   rollDice() {
 

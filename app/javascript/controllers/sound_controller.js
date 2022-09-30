@@ -7,9 +7,10 @@ export default class extends Controller {
   }
 
   play() {
+    if (window.secondDaydone === true) {
     document.getElementById("fire-audio").play();
     document.getElementById("buttons").style.display = "";
-    new Typed(".buttons", {
+    new Typed('.typed', {
       strings: [
         "There buttons appear. You feel someone staring at you , almost as this decision is really important. Choose wisely.^3000",
       ],
@@ -17,6 +18,6 @@ export default class extends Controller {
       loop: false,
       fadeOut: true,
       showCursor: false,
-    });
-  }
+    })}
+  };
 }
