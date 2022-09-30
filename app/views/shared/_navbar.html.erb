@@ -1,0 +1,44 @@
+<% if current_page?('/') %>
+  <div class="nav-left">
+    <div class="nav-left-item">
+      <a href="https://www.linkedin.com/in/spiros-tsiakalos/" target="_blank" class="nav-left-link">LI</a>
+    </div>
+    <div class="nav-left-item">
+      <a href="https://github.com/stsiakal" target="_blank" class="nav-left-link">GH</a>
+    </div>
+    <div class="nav-line black-line"></div>
+    <div class="nav-left-item nav-year">
+      <div class="year">/&zwj; 2022</div>
+    </div>
+  </div>
+<% elsif current_page?('/about')%>
+    <div class="nav-left">
+    <div class="nav-left-item">
+      <a href="/" class="nav-left-link">HOME</a>
+    </div>
+    <div class="nav-line white-line"></div>
+        <div class="nav-left-item">
+      <a href="/projects" class="nav-left-link">PROJECTS</a>
+    </div>
+  </div>
+<% elsif current_page?('/projects/sgmi')%>
+  <div class="nav-left">
+    <div class="nav-left-item">
+      <a href="/projects" class="nav-left-link">PROJECTS</a>
+    </div>
+    <div class="nav-line black-line"></div>
+    <div class="nav-left-item nav-year">
+      <div class="year">/&zwj; 2022</div>
+    </div>
+  </div>
+<% else %>
+    <div class="nav-left">
+    <div class="nav-left-item">
+      <a href="/" class="nav-left-link is-white">HOME</a>
+    </div>
+    <div class="nav-line white-line"></div>
+    <div class="nav-left-item nav-year">
+      <div class="year is-white">/2022</div>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+<% if current_page?('/projects') || current_page?('/contact') %>
+  <body class="bg-black" cz-shortcut-listen="true">
+    <%= render "shared/navbar" %>
+      <div class="container-all">
+      <%= yield %>
+    </div>
+  </body>
+<% else %>
+  <body class="bg-black" cz-shortcut-listen="true">
+    <%= render "shared/navbar" %>
+    <div class="container-all">
+      <%= yield %>
+    </div>
+  </body>
+<% end %>

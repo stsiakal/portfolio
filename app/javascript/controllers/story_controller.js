@@ -5,12 +5,12 @@ export default class extends Controller {
   connect() {}
 
   progress(event) {
-    let story = document.getElementById("story");
-    if (event.currentTarget.id === "fight") {
+    let story = document.getElementById("buttons");
+    if (event.currentTarget.id === "invastigation") {
       story.innerHTML = "kokkino";
-    } else if (event.currentTarget.id === "run") {
+    } else if (event.currentTarget.id === "perception") {
       story.innerHTML = "mple";
-    } else if (event.currentTarget.id === "cry") {
+    } else if (event.currentTarget.id === "escape") {
       story.innerHTML = "prasino";
     }
   }
