@@ -11,14 +11,20 @@
 @import "components/index";
 @import "pages/index";
 
+html,
 body {
   font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
 }
 
 .container-all {
-  max-width: 90% !important;
+  height: 90% !important;
+  width: 90% !important;
   margin: 0% 5%;
-  padding: 0%
+  padding: 0%;
 }
 
 .bg-white {
@@ -26,39 +32,38 @@ body {
   color: #ffffff !important;
 
   ::selection {
-    background: #ffffff  !important;
+    background: #ffffff !important;
     color: #ffffff !important;
   }
 
   ::-moz-selection {
-    background: #ffffff  !important;
+    background: #ffffff !important;
     color: #ffffff !important;
   }
 }
 
 .bg-black {
   background-color: #000000 !important;
-  color: #EEE7E1 !important;
+  color: #eee7e1 !important;
 
   ::selection {
-    background: #ffffff  !important;
+    background: #ffffff !important;
     color: #ffffff !important;
   }
 
   ::-moz-selection {
-    background: #eee7e1  !important;
+    background: #eee7e1 !important;
     color: #ffffff !important;
   }
 }
 
 .black {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 .white {
   color: #ffffff !important;
 }
-
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files

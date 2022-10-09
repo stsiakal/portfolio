@@ -1,0 +1,447 @@
+// iPhone and iPad
+@media (max-width: 767px) {
+  .torch-left-one {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    transform: translate(-50%, -50%);
+  }
+
+  .torch-left-two {
+    position: absolute;
+    top: 2%;
+    right: -10px;
+    transform: translate(-50%, -50%);
+  }
+}
+// Laptops and Bigger
+@media (min-width: 768px) {
+  .torch-left-one {
+    position: absolute;
+    top: 3%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+  }
+
+  .torch-left-two {
+    position: absolute;
+    bottom: 2%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.torch-fire {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.torch-fire .flicker {
+  background-image: url("https://metheus.dontstarvetogether.com/assets/flicker.png");
+  background-size: 100% 100%;
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.1;
+  transform: translate(-50%, -50%);
+  animation: flicker-animation 1s infinite;
+  overflow: hidden;
+}
+
+@keyframes flicker-animation {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+  }
+  10% {
+    transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(0.85);
+    transform: translate(-50%, -50%) scale(0.85);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.05);
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(1.15);
+    transform: translate(-50%, -50%) scale(1.15);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.torch-fire .glow {
+  position: absolute;
+  left: 15%;
+  top: 20%;
+  animation: glow-animation 10s infinite;
+}
+
+@keyframes glow-animation {
+  0% {
+    transform: scale(1);
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}
+
+.torch-fire .glow:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://metheus.dontstarvetogether.com/assets/fire-glow1.png");
+  background-size: 600% 100%;
+  animation-name: flicker;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.torch-fire .glow1 {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  animation: glow-animation 10s infinite;
+}
+
+.torch-fire .glow1:after {
+  background-position: -100% 0;
+}
+
+.torch-fire .glow2 {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  animation: glow-animation 15s infinite;
+}
+
+.torch-fire .glow2:after {
+}
+
+.torch-fire .glow3 {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  animation: glow-animation 5s infinite;
+}
+
+.torch-fire .glow3:after {
+  background-position: -200% 0;
+}
+
+.torch-fire .glow4 {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  animation: glow-animation 3s infinite;
+}
+
+.torch-fire .glow4:after {
+  background-position: -300% 0;
+}
+
+.torch-fire .glow5 {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  animation: glow-animation 3s infinite;
+}
+
+.torch-fire .glow5:after {
+  background-position: -400% 0;
+}
+
+.torch-fire .glow5 {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  animation: glow-animation 2s infinite;
+}
+
+.torch-fire .glow5:after {
+  background-position: -600% 0;
+}
+
+.torch-fire .glow6 {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  animation: glow-animation 8s infinite;
+}
+
+.torch-fire .glow6:after {
+  background-position: -300% 0;
+}
+
+.torch-fire .glow7 {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  animation: glow-animation 7s infinite;
+}
+
+.torch-fire .glow7:after {
+  background-position: -200% 0;
+}
+
+.torch-fire .glow8 {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  animation: glow-animation 6s infinite;
+}
+
+.torch-fire .glow8:after {
+  background-position: -100% 0;
+}
+
+.torch-fire .glow9 {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  animation: glow-animation 5s infinite;
+}
+
+.torch-fire .glow9:after {
+  background-position: -400% 0;
+}
+
+.torch-fire .glow10 {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  animation: glow-animation 4s infinite;
+}
+
+.torch-fire .glow10:after {
+  background-position: -500% 0;
+}
+
+@keyframes flicker {
+  30% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 0.4;
+  }
+  70% {
+    opacity: 0.5;
+  }
+}
+
+.torch-fire .smoke-container {
+}
+
+.torch-fire .smoke {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  animation: smoke-animation1 2s infinite;
+}
+
+.torch-fire .smoke1 {
+  animation: smoke-animation 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation-delay: 0s;
+}
+
+.torch-fire .smoke1:after {
+  animation-duration: 2s;
+  animation-delay: 0s;
+}
+
+.torch-fire .smoke2 {
+  animation: smoke-animation 2.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation-delay: 0.3s;
+}
+
+.torch-fire .smoke2:after {
+  animation-duration: 2.1s;
+  animation-delay: 0.3s;
+}
+
+.torch-fire .smoke3 {
+  animation: smoke-animation 2.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation-delay: 0.8s;
+}
+
+.torch-fire .smoke3:after {
+  animation-duration: 2.7s;
+  animation-delay: 0.8s;
+}
+
+.torch-fire .smoke4 {
+  animation: smoke-animation 2.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation-delay: 1.125s;
+}
+
+.torch-fire .smoke4:after {
+  animation-duration: 2.3s;
+  animation-delay: 1.125s;
+}
+
+.torch-fire .smoke5 {
+  animation: smoke-animation 2.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation-delay: 1.45s;
+}
+
+.torch-fire .smoke5:after {
+  animation-duration: 2.25s;
+  animation-delay: 1.45s;
+}
+
+.torch-fire .smoke6 {
+  animation: smoke-animation 2.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.torch-fire .smoke6:after {
+  animation-duration: 2.45s;
+}
+
+.torch-fire .smoke1 {
+  left: -15%;
+  bottom: 30%;
+}
+
+.torch-fire .smoke2 {
+  left: 15%;
+  bottom: 10%;
+}
+
+.torch-fire .smoke3 {
+  left: -25%;
+  bottom: 13%;
+}
+
+.torch-fire .smoke4 {
+  left: 12%;
+  bottom: 25%;
+}
+
+.torch-fire .smoke5 {
+  left: -5%;
+  bottom: 15%;
+}
+
+.torch-fire .smoke6 {
+  left: 5%;
+  bottom: 5%;
+}
+
+.torch-fire .smoke1:after {
+  -ms-transform: rotate(7deg);
+  transform: rotate(7deg);
+  transform: rotate(7deg);
+}
+
+.torch-fire .smoke2:after {
+  -ms-transform: rotate(25deg);
+  transform: rotate(25deg);
+  transform: rotate(25deg);
+}
+
+.torch-fire .smoke3:after {
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+
+.torch-fire .smoke4:after {
+  -ms-transform: rotate(-29deg);
+  transform: rotate(-29deg);
+  transform: rotate(-29deg);
+}
+
+.torch-fire .smoke5:after {
+  -ms-transform: rotate(-36deg);
+  transform: rotate(-36deg);
+  transform: rotate(-36deg);
+}
+
+.torch-fire .smoke6:after {
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+@keyframes smoke-animation {
+  0% {
+    opacity: 1;
+    transform: scale(0.25) translate(0px, 0px);
+    transform: scale(0.25) translate(0px, 0px);
+  }
+  80% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    transform: scale(1.5) translate(10px, -60px);
+    transform: scale(1.5) translate(10px, -60px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.torch-fire .smoke:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://metheus.dontstarvetogether.com/assets/smoke-blur.png");
+  background-size: 2300% 100%;
+  animation-name: smoke-particle-animation;
+  animation-timing-function: steps(23);
+  animation-iteration-count: infinite;
+}
+
+.torch-fire .smoke:after {
+  background-image: url("https://metheus.dontstarvetogether.com/assets/smoke-blur.png");
+  opacity: 0.7;
+}
+
+@keyframes smoke-particle-animation {
+  0% {
+    background-position: 0%;
+  }
+  1% {
+    background-position: 0%;
+  }
+  99% {
+    background-position: 2300%;
+  }
+  99% {
+    background-position: 2300%;
+  }
+}
