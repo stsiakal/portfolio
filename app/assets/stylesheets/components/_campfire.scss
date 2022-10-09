@@ -18,6 +18,7 @@ $fire: linear-gradient(
   transition-property: opacity;
   width: 320px;
   height: 320px;
+  top: 300px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -110,7 +111,7 @@ $fire: linear-gradient(
     animation: spark_1 2s forwards infinite;
   }
   main:nth-of-type(2) {
-    animation: spark_2 2s 1.50s forwards infinite;
+    animation: spark_2 2s 1.5s forwards infinite;
   }
 
   main:nth-of-type(3) {

@@ -36,11 +36,6 @@
     transform: rotateX(480deg) rotateY(960deg) rotateZ(0deg);
   }
 }
-body {
-  background: #333;
-  padding: 20px;
-  background-color: rgb(0, 0, 0);
-}
 
 .dice-content {
   margin: auto auto;
@@ -234,9 +229,4 @@ body {
 .randomize {
   width: auto;
   margin: 20px 10px;
-}
-
-.typed {
-  color: white;
-  text-shadow: 1cm;
 }

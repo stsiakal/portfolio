@@ -13,7 +13,7 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  justify-content: center;;
+  justify-content: center;
   align-items: center;
 }
 
@@ -60,20 +60,24 @@
   display: block;
   color: #ffffff;
   border: 0px solid #ffffff;
-  transition: transform 300ms ease-in-out, color 300ms ease-in-out, font-size 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, color 300ms ease-in-out,
+    font-size 300ms ease-in-out;
   font-weight: 300;
   text-align: left;
   text-decoration: none;
   text-transform: uppercase;
-
 }
 
 .home-link:hover {
   color: #ffffff;
 }
 
+.typed {
+  color: white;
+  text-shadow: 1cm;
+}
 // iPhone
-@media(max-width: 480px) {
+@media (max-width: 480px) {
   .home-wrapper {
     flex-direction: column;
   }
@@ -107,7 +111,7 @@
 }
 
 // Samsung
-@media(min-width: 481px) {
+@media (min-width: 481px) {
   .home-wrapper {
     flex-direction: column;
   }
@@ -144,8 +148,7 @@
 }
 
 // iPad
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .home-wrapper {
     flex-direction: column;
     align-items: center;
@@ -185,14 +188,14 @@
 }
 
 // iPad large
-@media(min-width: 800px) {
+@media (min-width: 800px) {
   .home-content-left {
     padding-top: 50%;
-    }
+  }
 }
 
 // Laptops
-@media(min-width: 1020px) {
+@media (min-width: 1020px) {
   .home-wrapper {
     flex-direction: row;
     align-items: flex-end;
@@ -210,7 +213,7 @@
 
   .home-content-left {
     padding-bottom: 5%;
-}
+  }
 
   .name {
     font-size: 16px !important;
@@ -242,12 +245,11 @@
 }
 
 // Laptop Macbook
-@media(min-width: 1201px) {
-
+@media (min-width: 1201px) {
   .home-content-left {
     padding-bottom: 12%;
     width: 100%;
-}
+  }
 
   .name {
     font-size: 18px !important;
@@ -274,7 +276,7 @@
 }
 
 // Monitor
-@media(min-width: 1201px) {
+@media (min-width: 1201px) {
   .home-content-left {
     padding-bottom: 20%;
   }
@@ -284,5 +286,6 @@
   }
 
   .home-description {
-    font-size: 16px;}
+    font-size: 16px;
+  }
 }
