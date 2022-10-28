@@ -1,14 +1,20 @@
 <div class="home-wrapper">
   <div class="home-section-center">
     <div class="typed">
-      <p id="typed"><span data-controller="typed-js" data-action="load@window->typed-js#firstDay"></span></p>
+      <p><span id="typed" data-controller="typed-js" data-action="load@window->typed-js#firstDay"></span></p>
     </div>
-    <div id="buttons" data-controller="story" style="display: none;">
-      <button data-action="click->story#progress" id='investigation'>Investigate this realm</button>
-      <button data-action="click->story#progress" id='perception'>Try to understand what the message meant</button>
-      <%= button_to "I just want to see the profile, get me out", about_path , method: 'get', id: 'escape' %>
+    <%= image_tag "skeleton.png", class:"skeleton", id:"skellie"%>
+    <div id="choices1" data-controller="typed-js" style="display: none;">
+      <button data-action="click->typed-js#progressStory" id='investigation'>Investigate</button>
+      <button data-action="click->typed-js#progressStory" id='perception'>Try to remember</button>
+      <%= button_to "I just want to see the portfolio, get me out", about_path , method: 'get', id: 'escape' %>
+    </div>
+    <div id="choices2" data-controller="typed-js" style="display: none;">
+        <button data-action="click->typed-js#progressStory" id='yesButton'>Sign</button>
+        <button data-action="click->typed-js#progressStory" id='noButton'>Leave</button>
     </div>
   </div>
 </div>
 
 <%= render 'campfire' %>
+<%= render  "dice" %>

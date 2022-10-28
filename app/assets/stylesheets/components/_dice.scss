@@ -39,22 +39,38 @@
 
 .dice-content {
   margin: auto auto;
-  position: relative;
+  position: absolute;
   width: 200px;
   height: 200px;
   perspective: 1500px;
+  top: 20%;
+  right: 40%;
 }
 
 .die {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 10px;
+  height: 10px;
   transform-style: preserve-3d;
   transition: transform 0.5s ease-out;
   cursor: pointer;
   transform: rotateX(-53deg);
+  opacity: 0;
 }
-.die.rolling {
+
+.die.fadeIn {
+  opacity: 1;
+  transition-duration: 4s;
+  transition-property: opacity;
+}
+
+.die.fadeOut {
+  opacity: 0;
+  transition-duration: 4s;
+  transition-property: opacity;
+}
+
+.rolling {
   -webkit-animation: roll 3s linear;
   animation: roll 3s linear;
 }

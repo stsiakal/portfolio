@@ -14,12 +14,12 @@ $fire: linear-gradient(
 
 .fireplace {
   opacity: 0;
-  transition-duration: 4s;
+  transition-duration: 6s;
   transition-property: opacity;
   width: 320px;
   height: 320px;
   top: 300px;
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -146,6 +146,10 @@ $fire: linear-gradient(
 
 .fireplace.fadeIn {
   opacity: 1;
+}
+
+.fireplace.fadeOut {
+  opacity: 0;
 }
 
 @keyframes burn {

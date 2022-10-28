@@ -1,0 +1,25 @@
+.skeleton {
+  width: 400px;
+  position: absolute;
+  top: 40%;
+  right: 0%;
+  opacity: 0;
+  transition-duration: 8s;
+  transition-property: opacity;
+}
+
+.skeleton.fadeIn {
+  opacity: 1;
+}
+
+.skeleton.fadeOut {
+  opacity: 0;
+}
+
+#carnival {
+  background-image: url('assets/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  transition: background 4s linear;
+}
