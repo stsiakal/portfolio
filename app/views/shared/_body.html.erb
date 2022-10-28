@@ -1,12 +1,17 @@
-<% if current_page?('/projects') || current_page?('/contact') %>
+<% if current_page?('/about') || current_page?('/projects') %>
   <body class="bg-black" cz-shortcut-listen="true">
+    <div class="switch-wrap">
+      <div id="switch" data-controller="switcheroo" data-action="click->switcheroo#transform">
+        <div id="circle"></div>
+      </div>
+    </div>
     <%= render "shared/navbar" %>
-      <div class="container-all">
+    <div class="container-all">
       <%= yield %>
     </div>
   </body>
 <% else %>
-  <body class="bg-black" cz-shortcut-listen="true">
+  <body class="bg-black" cz-shortcut-listen="true" id="carnival">
     <%= render "shared/navbar" %>
     <div class="container-all">
       <%= yield %>

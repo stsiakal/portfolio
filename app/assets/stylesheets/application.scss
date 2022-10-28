@@ -21,39 +21,44 @@ body {
 }
 
 .container-all {
-  height: 90% !important;
-  width: 90% !important;
   margin: 0% 5%;
   padding: 0%;
 }
 
 .bg-white {
-  background-color: #eee7e1 !important;
-  color: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+
+  h2 {
+    color: #000000 !important;
+  }
 
   ::selection {
-    background: #ffffff !important;
+    background: #000000 !important;
     color: #ffffff !important;
   }
 
   ::-moz-selection {
-    background: #ffffff !important;
+    background: #000000 !important;
     color: #ffffff !important;
   }
 }
 
 .bg-black {
   background-color: #000000 !important;
-  color: #eee7e1 !important;
+  color: #ffffff !important;
+  h2 {
+    color: #000000;
+  }
 
   ::selection {
     background: #ffffff !important;
-    color: #ffffff !important;
+    color: #000000 !important;
   }
 
   ::-moz-selection {
-    background: #eee7e1 !important;
-    color: #ffffff !important;
+    background: #ffffff !important;
+    color: #000000 !important;
   }
 }
 
