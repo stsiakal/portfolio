@@ -1,19 +1,60 @@
 // iPhone and iPad
-@media (max-width: 767px) {
+.torch,
+.glow,
+.flicker,
+.smoke {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+@media (max-width: 415px) {
   .torch-left-one {
     position: absolute;
     top: 2%;
-    left: 4%;
+    left: 8%;
     transform: translate(-50%, -50%);
   }
 
   .torch-left-two {
     position: absolute;
     top: 2%;
-    right: -10px;
+    right: -6%;
     transform: translate(-50%, -50%);
   }
 }
+
+@media (min-width: 416px) and (max-width: 766px) {
+  .torch-left-one {
+    position: absolute;
+    top: 2%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+  }
+
+  .torch-left-two {
+    position: absolute;
+    top: 2%;
+    right: -6%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 767px) and (max-width: 767px) {
+  .torch-left-one {
+    position: absolute;
+    top: 2%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+  }
+
+  .torch-left-two {
+    position: absolute;
+    top: 2%;
+    right: -4%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 // Laptops and Bigger
 @media (min-width: 768px) {
   .torch-left-one {
@@ -34,7 +75,6 @@
 .torch-fire {
   width: 60px;
   height: 60px;
-  overflow: hidden;
 }
 
 .torch-fire .flicker {
@@ -48,7 +88,6 @@
   opacity: 0.1;
   transform: translate(-50%, -50%);
   animation: flicker-animation 1s infinite;
-  overflow: hidden;
 }
 
 @keyframes flicker-animation {

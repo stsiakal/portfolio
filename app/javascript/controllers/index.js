@@ -7,8 +7,8 @@ import { application } from "./application"
 import AnimateController from "./animate_controller"
 application.register("animate", AnimateController)
 
-import StoryController from "./story_controller"
-application.register("story", StoryController)
+import ProjectTransitionController from "./project_transition_controller"
+application.register("project-transition", ProjectTransitionController)
 
 import SwitcherooController from "./switcheroo_controller"
 application.register("switcheroo", SwitcherooController)

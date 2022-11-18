@@ -27,10 +27,12 @@
 
 .cv-button:focus {
   text-decoration: none;
+  color: #fff;
 }
 
 .cv-button:hover {
   text-decoration: none;
+  color: #fff;
 }
 
 .cv-button:active {
@@ -67,7 +69,8 @@
   transition-duration: 4s;
   transition-property: opacity;
 }
-#choices1, #choices2 {
+#choices1,
+#choices2 {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -95,13 +98,11 @@
 }
 #switch {
   width: 60px;
-  margin: 0 auto;
   border: 2px solid #fec22a;
   border-radius: 27px;
   background: #ff9400;
   position: relative;
   display: inline-block;
-  margin: 0 20px;
   transform: translateY(10px);
 }
 #circle {

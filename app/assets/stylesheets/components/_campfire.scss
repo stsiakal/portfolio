@@ -16,8 +16,8 @@ $fire: linear-gradient(
   opacity: 0;
   transition-duration: 6s;
   transition-property: opacity;
-  width: 320px;
-  height: 320px;
+  min-width: 320px;
+  height: 160px;
   top: 300px;
   position: absolute;
   display: flex;

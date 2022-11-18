@@ -1,0 +1,453 @@
+.project-black-card {
+  position: absolute;
+  left: 50%;
+  height: 30vh;
+  width: 80vw;
+  background-color: #1a1919;
+  -webkit-transform: translate(-50%, 0px);
+  -ms-transform: translate(-50%, 0px);
+  transform: translate(-50%, 0px);
+  background-image: url("assets/sgmi_home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -moz-box-shadow: 2px 2px 4px #ccc;
+  -webkit-box-shadow: 2px 2px 4px #ccc;
+  box-shadow: 2px 2px 4px #ccc;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  overflow: hidden;
+  z-index: 1;
+  transition-property: background-position-y;
+  transition-duration: 4s;
+  transition-timing-function: ease-in-out;
+}
+.project-black-card.bottom {
+  transition-delay: 1.5s;
+  background-position-y: bottom;
+}
+
+.project-black-card.top {
+  transition-delay: 1.5s;
+  background-position-y: top;
+}
+
+.project-black-card-name {
+  color: #eee7e1;
+  padding-top: 20%;
+  padding-bottom: 4%;
+}
+
+.project-name-large {
+  position: relative;
+  color: #eee7e1;
+  font-size: 10vw !important;
+  margin-top: 0px;
+  margin-bottom: 0vh;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.75em;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #000;
+}
+
+.wrapper-small {
+  max-width: 65%;
+  padding-left: 5%;
+}
+
+.project-container p {
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+.project-description {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+
+.description-large {
+  max-width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 50px;
+  line-height: 1.3em;
+  font-weight: 300;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+.project-details {
+  max-width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 40px;
+  display: flex;
+}
+
+.w-row:before {
+  content: " ";
+  display: table;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+
+.project-details-column {
+  position: relative;
+  min-height: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// project-content
+.project-content p {
+  text-align: justify;
+}
+
+.content-footer {
+  padding-bottom: 20%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.call-to-action {
+  margin: 1em 0em;
+  font-size: 32px;
+}
+
+.header-detail {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #1a1919;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-left: 0px;
+}
+
+.col-detail {
+  position: relative;
+  display: block;
+  max-width: 90%;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.9em;
+  font-weight: 400;
+  text-decoration: none !important;
+  color: #fff;
+}
+
+.link-block {
+  color: #fff;
+  text-decoration: none;
+}
+
+.wrapper-bottom {
+  width: 100%;
+}
+
+.img-project {
+  width: 100%;
+  margin: 100px 0px;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.4);
+  border: none;
+}
+
+.img-project-medium {
+  width: 75%;
+  margin: 100px 0px;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.4);
+  border: none;
+}
+
+.h3-project {
+  text-align: center;
+  margin: 30px 0px;
+  width: fit-content;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// Galaxy fold
+@media (max-width: 280px) {
+  .description-large {
+    font-size: 18px !important;
+  }
+
+  .col-detail {
+    font-size: 12px !important;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}
+
+// Phones
+@media (max-width: 415px) {
+  .project-name-large {
+    font-size: 18vw !important;
+  }
+
+  .project-black-card-name {
+    color: #eee7e1;
+    padding-bottom: 4%;
+  }
+
+  .description-large {
+    max-width: 95%;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .project-details {
+    max-width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col-role {
+    width: 100%;
+  }
+
+  .col-respo {
+    width: 100%;
+  }
+
+  .col-detail {
+    max-width: 100%;
+  }
+
+  .img-project {
+    width: 90%;
+    margin: 30px 0px;
+  }
+
+  .project-text {
+    width: 90%;
+    font-size: 12px;
+  }
+
+  .img-project-medium {
+    margin: 30px 0px;
+  }
+
+  .call-to-action {
+    font-size: 24px;
+  }
+
+  .img-project-medium {
+    width: 90% !important;
+  }
+}
+
+// Surface duo
+@media (min-width: 416px) {
+  .project-name-large {
+    font-size: 18vw !important;
+  }
+
+  .project-black-card-name {
+    color: #eee7e1;
+    padding-bottom: 4%;
+    padding-top: 25vh;
+  }
+
+  .description-large {
+    max-width: 95%;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .project-details {
+    max-width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col-role {
+    width: 100%;
+  }
+
+  .col-respo {
+    width: 100%;
+  }
+
+  .col-detail {
+    max-width: 100%;
+  }
+
+  .img-project {
+    width: 90%;
+    margin: 30px 0px;
+  }
+
+  .project-text {
+    width: 90%;
+    font-size: 12px;
+  }
+
+  .img-project-medium {
+    margin: 30px 0px;
+  }
+
+  .call-to-action {
+    font-size: 24px;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+}
+
+// iPad
+@media (min-width: 768px) {
+  .project-name-large {
+    margin-bottom: 25vh;
+    margin-bottom: 0vh;
+    font-size: 15vw !important;
+  }
+
+  .description-large {
+    font-size: 30px;
+  }
+  .project-container {
+    margin-top: 0vh;
+  }
+
+  .project-details {
+    max-width: 80%;
+  }
+
+  .img-project {
+    width: 85%;
+    margin: 50px 0px;
+  }
+
+  .img-project-medium {
+    margin: 50px 0px;
+  }
+
+  .project-text {
+    width: 85%;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-black-card {
+    margin-top: 0px;
+  }
+}
+
+// Laptops
+@media (min-width: 1020px) {
+  .project-name-large {
+    font-size: 11vw !important;
+  }
+
+  .project-black-card {
+    height: 30vh;
+  }
+
+  .project-black-card-name {
+    height: 30vh;
+    padding-top: 10%;
+  }
+
+  .project-details {
+    max-width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .img-project {
+    width: 85% !important;
+  }
+
+  .project-text {
+    width: 85% !important;
+    font-size: 14px;
+  }
+
+  .col-role {
+    width: 30.333333%;
+  }
+
+  .col-respo {
+    width: 50.666667%;
+  }
+
+  .col-url {
+    width: 25%;
+  }
+
+  .description-large {
+    max-width: 75%;
+    font-size: 50px;
+  }
+
+  .link-block:hover {
+    color: #1a1919;
+    border-bottom: 2px solid #1a1919;
+  }
+
+  .button:hover {
+    color: #eee7e1;
+    padding: 20px 120px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .project-name-large {
+    margin-top: 30% !important;
+  }
+}
+
+// Monitor
+@media (min-width: 1600px) {
+  .project-name-large {
+    font-size: 11vw !important;
+    margin-top: 15% !important;
+  }
+
+  .img-project {
+    width: 90% !important;
+  }
+
+  .project-text {
+    width: 90% !important;
+  }
+}
