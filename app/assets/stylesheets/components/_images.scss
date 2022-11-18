@@ -1,11 +1,12 @@
 .skeleton {
-  width: 400px;
+  max-width: 30%;
   position: absolute;
-  top: 40%;
+  top: 30%;
   right: 0%;
   opacity: 0;
   transition-duration: 8s;
   transition-property: opacity;
+  display: block;
 }
 
 .skeleton.fadeIn {
@@ -17,7 +18,8 @@
 }
 
 #carnival {
-  background-image: url('assets/background.jpg');
+  background-image: url("assets/background.jpg");
+  max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;

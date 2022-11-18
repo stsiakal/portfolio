@@ -1,10 +1,5 @@
 <% if current_page?('/about') || current_page?('/projects') %>
   <body class="bg-black" cz-shortcut-listen="true">
-    <div class="switch-wrap">
-      <div id="switch" data-controller="switcheroo" data-action="click->switcheroo#transform">
-        <div id="circle"></div>
-      </div>
-    </div>
     <%= render "shared/navbar" %>
     <div class="container-all">
       <%= yield %>

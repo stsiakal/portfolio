@@ -1,22 +1,16 @@
 .contact-wrapper {
-  width: 70% !important;
-  margin: 0% 15% !important;
+  justify-content: center;
   padding: 0%;
   display: flex;
 }
 
 .intro-description {
   font-size: 14px;
-  text-align: left !important;
+  text-align: center !important;
 }
 
 // iPhone
 @media (max-width: 767px) {
-  .contact-wrapper {
-    width: 90% !important;
-    margin: 0% 5% !important;
-  }
-
   .content-contact {
     margin-top: 100px;
   }
@@ -50,7 +44,6 @@
 
   .intro-description {
     font-size: 14px;
-    text-align: left !important;
   }
 
   .description-contact {
@@ -61,11 +54,6 @@
 
 // iPad
 @media (min-width: 768px) {
-  .contact-wrapper {
-    width: 80% !important;
-    margin: 0% 10% !important;
-  }
-
   .content-contact {
     margin-top: 210px;
   }

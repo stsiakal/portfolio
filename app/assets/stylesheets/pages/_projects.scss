@@ -1,0 +1,247 @@
+.projects-wrapper {
+  padding: 0%;
+}
+
+.project-name {
+  padding-bottom: 2%;
+  color: #eee7e1;
+  line-height: 1em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.project-header-small {
+  position: relative;
+  margin: 0% !important;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.75em;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+// Samsung Galaxy fold
+@media (max-width: 374px) {
+  .projects-wrapper {
+    width: 82% !important;
+    margin: 0% 9% !important;
+    padding-top: 5%;
+  }
+
+  .content-main {
+    padding-bottom: 0%;
+    margin-right: 0px;
+    padding-top: 35% !important;
+  }
+
+  .description-projects {
+    font-size: 12px;
+  }
+
+  .project-name {
+    font-size: 16vw;
+  }
+
+  .project-header-small {
+    font-size: 10px;
+  }
+
+  .project-main {
+    margin-top: 30px !important;
+  }
+
+  .section-projects {
+    padding-bottom: 37%;
+    margin-top: 35px;
+  }
+}
+
+// iPhone, Samsung
+@media (min-width: 375px) {
+  .projects-wrapper {
+    width: 82% !important;
+    margin: 0% 9% !important;
+    padding-top: 5%;
+  }
+
+  .content-main {
+    padding-bottom: 0%;
+    margin-right: 0px;
+    padding-top: 20% !important;
+  }
+
+  .description-projects {
+    font-size: 12px;
+  }
+
+  .project-name {
+    font-size: 16vw;
+    margin-top: 20%;
+  }
+
+  .project-header-small {
+    font-size: 15px;
+  }
+
+  .project-main {
+    margin-top: 30px !important;
+  }
+
+  .section-projects {
+    padding-bottom: 37%;
+    margin-top: 35px;
+  }
+}
+
+// iPad
+@media (min-width: 768px) {
+  .content-main {
+    padding-bottom: 0%;
+    margin-right: 0px;
+    padding-top: 35% !important;
+  }
+
+  .description-projects {
+    font-size: 12px;
+  }
+
+  .project-name {
+    font-size: 12vw;
+  }
+
+  .project-main {
+    margin-top: 30px !important;
+  }
+
+  .section-projects {
+    padding-bottom: 37%;
+    margin-top: 35px;
+  }
+}
+
+// Smaller screens
+@media (min-width: 1020px) {
+  .projects-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content-main {
+    padding-bottom: 5%;
+    margin-right: 0px;
+    width: 95%;
+    padding-top: 86% !important;
+  }
+
+  .description-projects {
+    font-size: 12px;
+  }
+
+  .project-name {
+    font-size: 9vw;
+    margin-top: 4%;
+  }
+
+  .project-name:hover {
+    color: #eee7e1;
+    font-style: italic;
+  }
+  .project-main {
+    margin-top: 30px !important;
+  }
+
+  .section-projects {
+    padding-bottom: 37%;
+    margin-top: 35px;
+  }
+}
+
+// Laptop
+@media (min-width: 1201px) {
+  .header {
+    margin-top: 14%;
+  }
+}
+
+@media (min-width: 1280px) {
+}
+
+// Macbooks
+@media (min-width: 1400px) {
+  .section-projects {
+    width: 32%;
+  }
+
+  .project-header-small {
+    font-size: 14px !important;
+  }
+
+  .content-main {
+    padding-bottom: 5%;
+    margin-right: 0px;
+    padding-top: 38% !important;
+  }
+
+  .description-projects {
+    max-width: 80%;
+    font-size: 14px;
+  }
+
+  .project-name {
+    font-size: 9vw;
+  }
+
+  .project-main {
+    margin-top: 30px !important;
+  }
+
+  .section-projects {
+    padding-bottom: 28%;
+    margin-top: 51px;
+    width: 34%;
+  }
+}
+
+// Monitor
+@media (min-width: 1600px) {
+  .projects-wrapper {
+    width: 80% !important;
+    margin: 0% 10% !important;
+    padding-top: 5%;
+  }
+
+  .section-projects {
+    width: 32%;
+  }
+
+  .project-header-small {
+    font-size: 14px !important;
+  }
+
+  .project-main {
+    width: 122%;
+  }
+
+  .project-name {
+    font-size: 7vw;
+  }
+
+  .project-main {
+    margin-top: 30px !important;
+  }
+
+  .section-projects {
+    padding-bottom: 34%;
+    margin-top: 51px;
+  }
+
+  .description-projects {
+    max-width: 61%;
+  }
+
+  .content-main {
+    margin-left: 0px;
+    width: 150%;
+  }
+}

@@ -11,16 +11,23 @@
 @import "components/index";
 @import "pages/index";
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   font-family: "Montserrat", sans-serif;
-  height: 100vh;
-  width: 100vw;
   margin: 0px;
   padding: 0px;
 }
 
+body {
+  max-height: 100vh;
+  width: 100vw;
+}
 .container-all {
+  max-width: 90% !important;
   margin: 0% 5%;
   padding: 0%;
 }
@@ -48,7 +55,7 @@ body {
   background-color: #000000 !important;
   color: #ffffff !important;
   h2 {
-    color: #000000;
+    color: #ffffff;
   }
 
   ::selection {

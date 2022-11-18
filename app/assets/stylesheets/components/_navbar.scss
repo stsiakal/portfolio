@@ -25,7 +25,7 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin-top: 10px;
+    margin-bottom: 4px;
   }
 
   .nav-left-item {
@@ -37,7 +37,6 @@
   .nav-left-link {
     display: inline-block;
     text-decoration: none;
-    padding-left: 20px;
   }
 
   .nav-line {
@@ -124,6 +123,9 @@
   }
 }
 
+.nav-left {
+  overflow: hidden !important;
+}
 .nav-left-link {
   color: #ffffff;
 }
