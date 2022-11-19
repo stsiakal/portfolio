@@ -18,10 +18,11 @@
 }
 
 #carnival {
-  background-image: url("assets/background.jpg");
+  background-image: url("assets/carnival.jpg") !important;
   max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
-  transition: background 4s linear;
+  background-size: contain;
+  transition: background-image 4s linear;
+  overflow: hidden;
 }
