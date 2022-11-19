@@ -200,7 +200,7 @@ export default class extends Controller {
       new Typed("#typed", {
         strings: [
           "placeholder until i figure why it starts from the second one",
-          "While looking around some more your accidentally stepped on a bear trap.^2000",
+          "While looking around some more you accidentally stepped on a bear trap.^2000",
           "Why would there be a bear trap here?^2000",
           `You suffer ${Math.floor(Math.random() * 20)} points of damage^2000`,
           "You died.^2000 Better Luck next time.^2000",
