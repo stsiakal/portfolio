@@ -1,15 +1,6 @@
-<% if current_page?('/about') || current_page?('/projects') %>
-  <body class="bg-black" cz-shortcut-listen="true">
-    <%= render "shared/navbar" %>
-    <div class="container-all">
-      <%= yield %>
-    </div>
-  </body>
-<% else %>
-  <body class="bg-black" cz-shortcut-listen="true" id="carnival">
-    <%= render "shared/navbar" %>
-    <div class="container-all">
-      <%= yield %>
-    </div>
-  </body>
-<% end %>
+  <body class="bg-black" cz-shortcut-listen="true" style="background-image: url('assets/background.jpg');">
+  <%= render "shared/navbar" %>
+  <div class="container-all">
+    <%= yield %>
+  </div>
+</body>

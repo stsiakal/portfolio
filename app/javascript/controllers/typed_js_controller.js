@@ -1,8 +1,7 @@
 import { Controller } from "@hotwired/stimulus";
 import Typed from "typed.js";
-let FIRSTDAYDONE = false;
-let SECONDAYDONE = false;
-let TYPED = document.getElementById("typed");
+let FIRST_DAY_DONE = false;
+let SECOND_DAY_DONE = false;
 // Connects to data-controller="typed-js"
 export default class extends Controller {
   firstDay() {
@@ -26,8 +25,8 @@ export default class extends Controller {
     });
 
     function firstDayDone() {
-      FIRSTDAYDONE = true;
-      return FIRSTDAYDONE;
+      FIRST_DAY_DONE = true;
+      return FIRST_DAY_DONE;
     }
     function fireFadeIn() {
       document.getElementById("fireplace").classList.add("fadeIn");
@@ -35,10 +34,10 @@ export default class extends Controller {
   }
 
   playSound() {
-    if (FIRSTDAYDONE === true) {
+    if (FIRST_DAY_DONE === true) {
       document.getElementById("fire-audio").play();
       document.getElementById("choices1").style.display = "";
-      new Typed(TYPED, {
+      new Typed("#typed", {
         strings: [
           "placeholder until i figure why it starts from the second one",
           "Three buttons appear.^2000",
@@ -56,17 +55,17 @@ export default class extends Controller {
     }
 
     function secondDayDone() {
-      SECONDAYDONE = true;
-      return SECONDAYDONE;
+      SECOND_DAY_DONE = true;
+      return SECOND_DAY_DONE;
     }
   }
 
   progressStory(e) {
-    if (SECONDAYDONE === true) {
+    if (SECOND_DAY_DONE === true) {
       if (e.currentTarget.id === "investigation") {
         document.getElementById("choices1").style.display = "none";
         document.querySelector(".skeleton").classList.add("fadeIn");
-        new Typed(TYPED, {
+        new Typed("#typed", {
           strings: [
             "placeholder until i figure why it starts from the second one",
             "A skeleton approaches.^2000",
@@ -88,7 +87,7 @@ export default class extends Controller {
       } else if (e.currentTarget.id === "perception") {
         document.getElementById("choices1").style.display = "none";
         perceptionRollListener();
-        new Typed(TYPED, {
+        new Typed("#typed", {
           strings: [
             "placeholder until i figure why it starts from the second one",
             "While looking around you find an emerald dice.^2000",
@@ -110,7 +109,7 @@ export default class extends Controller {
     if (e.currentTarget.id === "yesButton") {
       propFade();
       fireFadeOut();
-      new Typed(TYPED, {
+      new Typed("#typed", {
         strings: [
           "placeholder until i figure why it starts from the second one",
           "He tells you how to get to the carnival, he gives you a coin and then he leaves.^2000",
@@ -123,7 +122,7 @@ export default class extends Controller {
         loop: false,
         onStringTyped: (pos) => {
           if (pos === 1) {
-            document.body.style.backgroundImage = "url(assets/carnival.jpg)";
+            document.body.setAttribute("id", "carnival");
           }
         },
         showCursor: false,
@@ -133,7 +132,7 @@ export default class extends Controller {
         },
       });
     } else if (e.currentTarget.id === "noButton") {
-      new Typed(TYPED, {
+      new Typed("#typed", {
         strings: [
           "placeholder until i figure why it starts from the second one",
           "Im sad to see you leave so soon.^2000",
@@ -180,7 +179,7 @@ export default class extends Controller {
     }
 
     function criticalRoll() {
-      new Typed(TYPED, {
+      new Typed("#typed", {
         strings: [
           "placeholder until i figure why it starts from the second one",
           "You realize that you got immersed unwillingly in my attempt to a create a cool dice and a simple story.^2000",
@@ -198,10 +197,10 @@ export default class extends Controller {
     }
 
     function averageRoll() {
-      new Typed(TYPED, {
+      new Typed("#typed", {
         strings: [
           "placeholder until i figure why it starts from the second one",
-          "While searching some more your accidentaly step on a bear trap.^2000",
+          "While looking around some more your accidentally stepped on a bear trap.^2000",
           "Why would there be a bear trap here?^2000",
           `You suffer ${Math.floor(Math.random() * 20)} points of damage^2000`,
           "You died.^2000 Better Luck next time.^2000",
@@ -217,7 +216,7 @@ export default class extends Controller {
     }
 
     function poorRoll() {
-      new Typed(TYPED, {
+      new Typed("#typed", {
         strings: [
           "placeholder until i figure why it starts from the second one",
           "Everything is perfectly normal.^2000",
@@ -246,7 +245,6 @@ export default class extends Controller {
       document.getElementById("die1").classList.remove("fadeIn");
       document.getElementById("diceButton").classList.remove("fadeIn");
       document.getElementById("die1").classList.add("fadeOut");
-      document.getElementById("diceButton").classList.add("fadeOut");
     }
 
     function soundFadeOut() {

@@ -5,11 +5,11 @@ export default class extends Controller {
   static targets = ["button"];
 
   rollDice() {
+    document.getElementById("diceButton").style.display = "none";
     let sides = 20;
     let initialSide = 1;
     let lastFace;
     let timeoutId;
-    const transitionDuration = 500;
     const animationDuration = 3000;
     let die = document.getElementById("die1");
     die.classList.add("rolling");
