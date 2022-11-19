@@ -128,7 +128,9 @@ export default class extends Controller {
         showCursor: false,
         fadeOut: true,
         onComplete: () => {
-          window.location.replace("http://localhost:3000/about");
+          window.location.replace(
+            "https://stsiakal-porfolio.herokuapp.com/about"
+          );
         },
       });
     } else if (e.currentTarget.id === "noButton") {
@@ -149,7 +151,9 @@ export default class extends Controller {
           }
         },
         onComplete: () => {
-          window.location.replace("http://localhost:3000/about");
+          window.location.replace(
+            "https://stsiakal-porfolio.herokuapp.com/about"
+          );
         },
       });
     }
@@ -191,7 +195,7 @@ export default class extends Controller {
         showCursor: false,
         fadeOut: true,
         onComplete: () => {
-          window.location.replace("http://localhost:3000/about");
+          window.location.replace("https://stsiakal-porfolio.herokuapp.com/");
         },
       });
     }
@@ -210,7 +214,9 @@ export default class extends Controller {
         showCursor: false,
         fadeOut: true,
         onComplete: () => {
-          window.location.replace("http://localhost:3000/about");
+          window.location.replace(
+            "https://stsiakal-porfolio.herokuapp.com/about"
+          );
         },
       });
     }
@@ -227,7 +233,7 @@ export default class extends Controller {
         showCursor: false,
         fadeOut: true,
         onComplete: () => {
-          window.location.replace("http://localhost:3000");
+          window.location.replace("https://stsiakal-porfolio.herokuapp.com/");
         },
       });
     }
