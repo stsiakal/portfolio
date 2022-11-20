@@ -123,10 +123,6 @@
   }
 
   .about-header {
-    padding-top: 18%;
-  }
-
-  .about-header {
     font-family: "Montserrat", sans-serif;
     font-size: 14vw !important;
     line-height: 1em;
@@ -153,7 +149,7 @@
 // iPad large
 @media (min-width: 768px) {
   .profile-img {
-    top: 17%;
+    top: 10%;
     width: 26%;
     right: 4%;
   }
@@ -171,12 +167,8 @@
 
 // Laptops
 @media (min-width: 1020px) {
-  .about-header {
-    padding-top: 12%;
-  }
-
   .profile-img {
-    top: 18%;
+    top: 6%;
     width: 30%;
   }
 
@@ -187,31 +179,14 @@
 
 // Laptop larger
 @media (min-width: 1201px) {
-  .about-header {
-    margin-top: 0% !important;
-    padding-top: 12%;
-  }
-
   .profile-img {
-    top: 18%;
-    right: 2%;
-  }
-}
-
-@media (min-width: 1280px) {
-  .about-header {
-    margin-top: 0% !important;
-    padding-top: 12%;
+    top: 4%;
+    right: 4%;
   }
 }
 
 // Monitor
 @media (min-width: 1312px) {
-  .about-header {
-    margin-top: 0% !important;
-    padding-top: 12%;
-  }
-
   .about-header-small {
     font-size: 22px !important;
   }
