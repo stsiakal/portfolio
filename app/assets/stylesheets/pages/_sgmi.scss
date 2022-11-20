@@ -21,6 +21,7 @@
   transition-property: background-position-y;
   transition-duration: 4s;
   transition-timing-function: ease-in-out;
+  background-position-y: top;
 }
 .project-black-card.bottom {
   transition-delay: 1.5s;
@@ -211,6 +212,7 @@
   .project-black-card-name {
     color: #eee7e1;
     padding-bottom: 4%;
+    padding-top: 25vh;
   }
 
   .description-large {
@@ -332,9 +334,7 @@
 // iPad
 @media (min-width: 768px) {
   .project-name-large {
-    margin-bottom: 25vh;
-    margin-bottom: 0vh;
-    font-size: 15vw !important;
+    font-size: 11vw !important;
   }
 
   .description-large {
@@ -434,7 +434,6 @@
 @media (min-width: 1600px) {
   .project-name-large {
     font-size: 11vw !important;
-    margin-top: 15% !important;
   }
 
   .img-project {
