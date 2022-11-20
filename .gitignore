@@ -25,10 +25,8 @@
 !/tmp/storage/
 !/tmp/storage/.keep
 
-<<<<<<< HEAD
-=======
+/public/assets
 
->>>>>>> 521881621b1c676109d265754d4392963c5b4bf6
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
