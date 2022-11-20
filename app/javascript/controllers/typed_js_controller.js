@@ -120,6 +120,7 @@ export default class extends Controller {
     if (e.currentTarget.id === "yesButton") {
       propFade();
       fireFadeOut();
+      soundFadeOut();
       new Typed("#typed", {
         strings: [
           "placeholder until i figure why it starts from the second one",
@@ -159,6 +160,8 @@ export default class extends Controller {
         onStringTyped: (pos) => {
           if (pos === 1) {
             propFade();
+            fireFadeOut();
+            soundFadeOut();
           }
         },
         onComplete: () => {
