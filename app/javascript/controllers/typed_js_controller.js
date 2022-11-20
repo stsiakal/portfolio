@@ -2,6 +2,7 @@ import { Controller } from "@hotwired/stimulus";
 import Typed from "typed.js";
 let FIRST_DAY_DONE = false;
 let SECOND_DAY_DONE = false;
+export let DICE_READY = false;
 // Connects to data-controller="typed-js"
 export default class extends Controller {
   firstDay() {
@@ -102,8 +103,18 @@ export default class extends Controller {
             soundFadeOut();
             diceFadeIn();
           },
+          onStringTyped: (pos) => {
+            if (pos === 2) {
+              diceDone();
+            }
+          },
         });
       }
+    }
+
+    function diceDone() {
+      DICE_READY = true;
+      return DICE_READY;
     }
 
     if (e.currentTarget.id === "yesButton") {
@@ -195,7 +206,9 @@ export default class extends Controller {
         showCursor: false,
         fadeOut: true,
         onComplete: () => {
-          window.location.replace("https://stsiakal-porfolio.herokuapp.com/");
+          window.location.replace(
+            "https://stsiakal-porfolio.herokuapp.com/about"
+          );
         },
       });
     }

@@ -1,5 +1,5 @@
 <div class="home-section-center">
-  <div class="fireplace" id="fireplace" data-controller="typed-js" data-action="click->typed-js#playSound:once">
+  <div class="fireplace" id="fireplace" data-controller="typed-js">
     <div class="blur">
       <div class="fireplace__flame_big"></div>
     </div>
@@ -15,7 +15,7 @@
     <main class="fireplace__spark"></main>
     <main class="fireplace__spark"></main>
     <main class="fireplace__spark"></main>
-    <div class="blur fix">
+    <div class="blur fix" data-action="click->typed-js#playSound:once">
       <div class="fireplace__flame"></div>
     </div>
     <div class="fireplace__light"></div>
