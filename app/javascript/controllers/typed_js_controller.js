@@ -140,7 +140,7 @@ export default class extends Controller {
         fadeOut: true,
         onComplete: () => {
           window.location.replace(
-            "https://stsiakal-porfolio.herokuapp.com/about"
+            "https://stsiakal-portfolio.herokuapp.com/about"
           );
         },
       });
@@ -163,7 +163,7 @@ export default class extends Controller {
         },
         onComplete: () => {
           window.location.replace(
-            "https://stsiakal-porfolio.herokuapp.com/about"
+            "https://stsiakal-portfolio.herokuapp.com/about"
           );
         },
       });
@@ -207,7 +207,7 @@ export default class extends Controller {
         fadeOut: true,
         onComplete: () => {
           window.location.replace(
-            "https://stsiakal-porfolio.herokuapp.com/about"
+            "https://stsiakal-portfolio.herokuapp.com/about"
           );
         },
       });
@@ -228,7 +228,7 @@ export default class extends Controller {
         fadeOut: true,
         onComplete: () => {
           window.location.replace(
-            "https://stsiakal-porfolio.herokuapp.com/about"
+            "https://stsiakal-portfolio.herokuapp.com/about"
           );
         },
       });
@@ -246,7 +246,7 @@ export default class extends Controller {
         showCursor: false,
         fadeOut: true,
         onComplete: () => {
-          window.location.replace("https://stsiakal-porfolio.herokuapp.com/");
+          window.location.replace("https://stsiakal-portfolio.herokuapp.com/");
         },
       });
     }
