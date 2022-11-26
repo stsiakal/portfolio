@@ -2,16 +2,16 @@
 // Run that command whenever you add a new controller or create them with
 // ./bin/rails generate stimulus controllerName
 
-import { application } from "./application"
+import { application } from "./application";
 
-import AnimateController from "./animate_controller"
-application.register("animate", AnimateController)
+import AnimateController from "./animate_controller";
+application.register("animate", AnimateController);
 
-import ProjectTransitionController from "./project_transition_controller"
-application.register("project-transition", ProjectTransitionController)
+import ProjectTransitionController from "./project_transition_controller";
+application.register("project-transition", ProjectTransitionController);
 
-import SwitcherooController from "./switcheroo_controller"
-application.register("switcheroo", SwitcherooController)
+import SwitcherooController from "./switcheroo_controller";
+application.register("switcheroo", SwitcherooController);
 
-import TypedJsController from "./typed_js_controller"
-application.register("typed-js", TypedJsController)
+import TypedJsController from "./typed_js_controller";
+application.register("typed-js", TypedJsController);

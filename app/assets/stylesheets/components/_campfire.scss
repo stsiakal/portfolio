@@ -18,7 +18,7 @@ $fire: linear-gradient(
   transition-property: opacity;
   min-width: 320px;
   height: 160px;
-  top: 300px;
+  top: 55%;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -140,6 +140,7 @@ $fire: linear-gradient(
     filter: blur(1px);
     &.fix {
       position: absolute;
+      padding: 250px 250px 0 250px;
     }
   }
 }

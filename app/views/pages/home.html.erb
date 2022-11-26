@@ -1,9 +1,13 @@
 <div class="home-wrapper">
   <div class="home-section-center">
     <div class="typed">
-      <p><span id="typed" data-controller="typed-js" data-action="load@window->typed-js#firstDay"></span></p>
+      <p><span id="typed"></span></p>
     </div>
     <%= image_tag "skeleton.png", class:"skeleton"%>
+    <div class="prologue" data-controller="typed-js" data-action="click->typed-js#firstDay">
+      <button class="btn-home" id='storyTime'>Try the story</button>
+      <%= button_to "I just want to see the portfolio, get me out", about_path , method: 'get', id: 'escape', class: 'btn-home'%>
+    </div>
     <div id="choices1" data-controller="typed-js" style="display: none;">
       <button class="btn-home" data-action="click->typed-js#progressStory" id='investigation'>Investigate</button>
       <button class="btn-home" data-action="click->typed-js#progressStory" id='perception'>Try to remember</button>
