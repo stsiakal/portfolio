@@ -1,12 +1,17 @@
 import { Controller } from "@hotwired/stimulus";
 import Typed from "typed.js";
+
 let FIRST_DAY_DONE = false;
 let SECOND_DAY_DONE = false;
 export let DICE_READY = false;
 // Connects to data-controller="typed-js"
 export default class extends Controller {
+  connect() {
+    console.log(FIRST_DAY_DONE);
+  }
   firstDay() {
-    new Typed(this.element, {
+    document.querySelector(".prologue").style.display = "none";
+    new Typed("#typed", {
       strings: [
         "You vaguely remember clicking this weird portfolio link.^2000",
         "You find yourself sitting next to a bonfire.^2000",
@@ -22,6 +27,7 @@ export default class extends Controller {
       },
       onComplete: () => {
         firstDayDone();
+        console.log(FIRST_DAY_DONE);
       },
     });
 

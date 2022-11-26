@@ -2,18 +2,13 @@
   <div class="nav-left">
     <div class="nav-line white-line" id="line1"></div>
     <div class="nav-left-item">
-      <a href="/projects" class="nav-left-link">PROJECTS</a>
+      <a href="#anchor-project" class="nav-left-link">PROJECTS</a>
     </div>
     <div class="nav-line white-line" id="line2"></div>
-    <%= render 'torch' %>
-  </div>
-<% elsif current_page?('/projects') || current_page?('/contact') %>
-  <div class="nav-left">
-    <div class="nav-line white-line" id="line1"></div>
     <div class="nav-left-item">
-      <a href="/about" class="nav-left-link">ABOUT</a>
+      <a href="#anchor-contact" class="nav-left-link">CONTACT</a>
     </div>
-    <div class="nav-line white-line" id="line2"></div>
+    <div class="nav-line white-line" id="line3"></div>
     <%= render 'torch' %>
   </div>
 <% else %>

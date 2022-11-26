@@ -1,4 +1,5 @@
 .project-black-card {
+  top: 90%;
   position: absolute;
   left: 50%;
   height: 30vh;
@@ -85,7 +86,7 @@
   max-width: 75%;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 40px;
+  padding-top: 20px;
   display: flex;
 }
 
@@ -204,11 +205,15 @@
 }
 
 // Phones
-@media (max-width: 415px) {
+@media (min-width: 375px) {
   .project-name-large {
+    margin-top: 44px;
     font-size: 18vw !important;
   }
 
+  .project-black-card {
+    top: 110%;
+  }
   .project-black-card-name {
     color: #eee7e1;
     padding-bottom: 4%;
@@ -225,7 +230,7 @@
     max-width: 75%;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 40px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -267,8 +272,18 @@
   }
 }
 
+@media (min-width: 390px) {
+  .project-black-card {
+    top: 87%;
+  }
+}
+
 // Surface duo
-@media (min-width: 416px) {
+@media (min-width: 412px) {
+  .project-black-card {
+    top: 81%;
+  }
+
   .project-name-large {
     font-size: 18vw !important;
   }
@@ -331,10 +346,29 @@
   }
 }
 
+@media (min-width: 540px) {
+  .project-black-card {
+    top: 100%;
+  }
+}
+
+@media (min-width: 600) {
+  .project-black-card {
+    height: 30vh;
+    top: 104%;
+    margin-top: 0px;
+  }
+}
 // iPad
 @media (min-width: 768px) {
+  .project-black-card {
+    top: 67%;
+    margin-top: 0px;
+  }
+
   .project-name-large {
     font-size: 11vw !important;
+    margin-top: 64px;
   }
 
   .description-large {
@@ -361,13 +395,25 @@
     width: 85%;
   }
 }
-
-@media (min-width: 768px) {
+@media (min-width: 820px) {
   .project-black-card {
-    margin-top: 0px;
+    top: 60%;
   }
 }
 
+@media (min-width: 912px) {
+  .project-black-card {
+    top: 50%;
+  }
+}
+
+@media (min-width: 975) {
+  .project-black-card {
+    height: 30vh;
+    top: 97%;
+    margin-top: 0px;
+  }
+}
 // Laptops
 @media (min-width: 1020px) {
   .project-name-large {
@@ -376,6 +422,8 @@
 
   .project-black-card {
     height: 30vh;
+    top: 122%;
+    margin-top: 0px;
   }
 
   .project-black-card-name {
@@ -387,7 +435,7 @@
     max-width: 75%;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 40px;
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -430,8 +478,25 @@
   }
 }
 
+@media (min-width: 1275px) {
+  .project-black-card {
+    top: 100%;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1368px) {
+  .project-black-card {
+    top: 77%;
+    margin-top: 0px;
+  }
+}
 // Monitor
 @media (min-width: 1600px) {
+  .project-black-card {
+    top: 80%;
+    margin-top: 0px;
+  }
   .project-name-large {
     font-size: 11vw !important;
   }
