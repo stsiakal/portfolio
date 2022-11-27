@@ -39,7 +39,6 @@ export default class extends Controller {
   playSound(e) {
     if (FIRST_DAY_DONE === true) {
       document.getElementById("fire-audio").play();
-      document.getElementById("choices1").style.display = "";
       let x = new Typed("#typed", {
         strings: [
           "placeholder until i figure why it starts from the second one",
@@ -55,6 +54,7 @@ export default class extends Controller {
           secondDayDone();
         },
       });
+      document.getElementById("choices1").style.display = "";
       TYPED = x;
       e.target.removeAttribute("data-controller");
       function secondDayDone() {
@@ -89,6 +89,7 @@ export default class extends Controller {
           },
         });
         TYPED = x;
+        e.target.removeAttribute("data-controller");
       } else if (e.currentTarget.id === "perception") {
         document.getElementById("choices1").style.display = "none";
         perceptionRollListener();
@@ -114,6 +115,7 @@ export default class extends Controller {
           },
         });
         TYPED = x;
+        e.target.removeAttribute("data-controller");
       }
     }
 
@@ -151,6 +153,7 @@ export default class extends Controller {
         },
       });
       TYPED = x;
+      e.target.removeAttribute("data-controller");
     } else if (e.currentTarget.id === "noButton") {
       propFade();
       fireFadeOut();
@@ -173,6 +176,7 @@ export default class extends Controller {
         },
       });
       TYPED = x;
+      e.target.removeAttribute("data-controller");
     }
 
     function perceptionRollListener() {
@@ -226,7 +230,9 @@ export default class extends Controller {
           "placeholder until i figure why it starts from the second one",
           "While looking around some more you accidentally stepped on a bear trap.^1000",
           "Why would there be a bear trap here?^1000",
-          `You suffer ${Math.floor(Math.random() * 20 + 1)} points of damage^1000`,
+          `You suffer ${Math.floor(
+            Math.random() * 20 + 1
+          )} points of damage^1000`,
           "You died.^1000 Better Luck next time.^1000",
         ],
         typeSpeed: 30,
