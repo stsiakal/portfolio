@@ -146,3 +146,8 @@
 .white-line {
   background-color: #eee7e1;
 }
+
+.nav-left.fadeOut {
+  opacity: 0;
+  transition: opacity 2s ease;
+}

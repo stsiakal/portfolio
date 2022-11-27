@@ -28,6 +28,11 @@ body {
   padding: 0%;
 }
 
+.container-all.fadeOut {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
 .bg-white {
   background-color: #ffffff !important;
   color: #000000 !important;

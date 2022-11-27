@@ -5,11 +5,16 @@ export default class extends Controller {
   transform() {
     if (this.element.className === "") {
       this.element.classList.add("switched");
+      document.querySelector(".switch-wrap").style.display = "none";
+      document.querySelector(".container-all").classList.add("fadeOut");
+      document.querySelector(".nav-left").classList.add("fadeOut");
+      setTimeout(returnHome, 3000);
+
+      function returnHome() {
+        window.location.replace("https://stsiakal-portfolio.herokuapp.com/");
+      }
     } else {
       this.element.classList.remove("switched");
-      document.getElementById("first-torch").style.display = "";
-      document.getElementById("second-torch").style.display = "";
-      document.querySelector(".container-all").style.display = "";
     }
   }
 }
