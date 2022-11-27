@@ -1,23 +1,20 @@
 import { Controller } from "@hotwired/stimulus";
 import Typed from "typed.js";
-
+export let TYPED = null;
 let FIRST_DAY_DONE = false;
 let SECOND_DAY_DONE = false;
 export let DICE_READY = false;
 // Connects to data-controller="typed-js"
 export default class extends Controller {
-  connect() {
-    console.log(FIRST_DAY_DONE);
-  }
   firstDay() {
     document.querySelector(".prologue").style.display = "none";
-    new Typed("#typed", {
+    let x = new Typed("#typed", {
       strings: [
-        "You vaguely remember clicking this weird portfolio link.^2000",
-        "You find yourself sitting next to a bonfire.^2000",
+        "You vaguely remember clicking this weird portfolio link.^1000",
+        "You find yourself sitting next to a bonfire.^1000",
         "You can't feel any warmth radiating from it.^1000(Hint: click it)",
       ],
-      startDelay: 2000,
+      startDelay: 1000,
       typeSpeed: 30,
       loop: false,
       showCursor: false,
@@ -27,10 +24,9 @@ export default class extends Controller {
       },
       onComplete: () => {
         firstDayDone();
-        console.log(FIRST_DAY_DONE);
       },
     });
-
+    TYPED = x;
     function firstDayDone() {
       FIRST_DAY_DONE = true;
       return FIRST_DAY_DONE;
@@ -40,16 +36,16 @@ export default class extends Controller {
     }
   }
 
-  playSound() {
+  playSound(e) {
     if (FIRST_DAY_DONE === true) {
       document.getElementById("fire-audio").play();
       document.getElementById("choices1").style.display = "";
-      new Typed("#typed", {
+      let x = new Typed("#typed", {
         strings: [
           "placeholder until i figure why it starts from the second one",
-          "Three buttons appear.^2000",
-          "This feels important.^2000",
-          "Choose wisely.^2000",
+          "Two buttons appear.^1000",
+          "This feels important.^1000",
+          "Choose wisely.^1000",
         ],
         typeSpeed: 30,
         loop: false,
@@ -59,11 +55,12 @@ export default class extends Controller {
           secondDayDone();
         },
       });
-    }
-
-    function secondDayDone() {
-      SECOND_DAY_DONE = true;
-      return SECOND_DAY_DONE;
+      TYPED = x;
+      e.target.removeAttribute("data-controller");
+      function secondDayDone() {
+        SECOND_DAY_DONE = true;
+        return SECOND_DAY_DONE;
+      }
     }
   }
 
@@ -72,14 +69,14 @@ export default class extends Controller {
       if (e.currentTarget.id === "investigation") {
         document.getElementById("choices1").style.display = "none";
         document.querySelector(".skeleton").classList.add("fadeIn");
-        new Typed("#typed", {
+        let x = new Typed("#typed", {
           strings: [
             "placeholder until i figure why it starts from the second one",
-            "A skeleton approaches.^2000",
-            "He introduces himself and proceeds to inform you about the new carnival in town.^2000",
-            "He says you need to sign an agreement to respect the carnival rules.^2000",
-            "He seems trustworthy.^2000",
-            "What do you do?^2000",
+            "A skeleton approaches.^1000",
+            "He introduces himself and proceeds to inform you about the new carnival in town.^1000",
+            "He says you need to sign an agreement to respect the carnival rules.^1000",
+            "He seems trustworthy.^1000",
+            "What do you do?^1000",
           ],
           typeSpeed: 30,
           loop: false,
@@ -91,14 +88,15 @@ export default class extends Controller {
             }
           },
         });
+        TYPED = x;
       } else if (e.currentTarget.id === "perception") {
         document.getElementById("choices1").style.display = "none";
         perceptionRollListener();
-        new Typed("#typed", {
+        let x = new Typed("#typed", {
           strings: [
             "placeholder until i figure why it starts from the second one",
-            "While looking around you find an emerald dice.^2000",
-            "May lady luck smile upon you.^2000",
+            "While looking around you find an emerald dice.^1000",
+            "May lady luck smile upon you.^1000",
           ],
           typeSpeed: 30,
           loop: false,
@@ -115,6 +113,7 @@ export default class extends Controller {
             }
           },
         });
+        TYPED = x;
       }
     }
 
@@ -127,14 +126,14 @@ export default class extends Controller {
       propFade();
       fireFadeOut();
       soundFadeOut();
-      new Typed("#typed", {
+      let x = new Typed("#typed", {
         strings: [
           "placeholder until i figure why it starts from the second one",
-          "He tells you how to get to the carnival, he gives you a coin and then he leaves.^2000",
-          "You make your way towards the carvinal.^2000",
-          "As you enter, you see all sorts of fun games and you cant wait to try them all.^2000",
-          "But that's not the reason you came here today.^2000",
-          "Why did you come here?^2000",
+          "He tells you how to get to the carnival, he gives you a coin and then he leaves.^1000",
+          "You make your way towards the carvinal.^1000",
+          "As you enter, you see all sorts of fun games and you cant wait to try them all.^1000",
+          "But that's not the reason you came here today.^1000",
+          "Why did you come here?^1000",
         ],
         typeSpeed: 30,
         loop: false,
@@ -151,31 +150,29 @@ export default class extends Controller {
           );
         },
       });
+      TYPED = x;
     } else if (e.currentTarget.id === "noButton") {
-      new Typed("#typed", {
+      propFade();
+      fireFadeOut();
+      soundFadeOut();
+      let x = new Typed("#typed", {
         strings: [
           "placeholder until i figure why it starts from the second one",
-          "Im sad to see you leave so soon.^2000",
-          "Hope you change your mind next time.^2000",
-          "Good luck with your search.^2000",
+          "I'm sad to see you leave so soon.^1000",
+          "Hope you change your mind next time.^1000",
+          "Good luck with your search.^1000",
         ],
         typeSpeed: 30,
         loop: false,
         showCursor: false,
         fadeOut: true,
-        onStringTyped: (pos) => {
-          if (pos === 1) {
-            propFade();
-            fireFadeOut();
-            soundFadeOut();
-          }
-        },
         onComplete: () => {
           window.location.replace(
             "https://stsiakal-portfolio.herokuapp.com/about"
           );
         },
       });
+      TYPED = x;
     }
 
     function perceptionRollListener() {
@@ -203,11 +200,11 @@ export default class extends Controller {
     }
 
     function criticalRoll() {
-      new Typed("#typed", {
+      let x = new Typed("#typed", {
         strings: [
           "placeholder until i figure why it starts from the second one",
-          "You realize that you got immersed unwillingly in my attempt to a create a cool dice and a simple story.^2000",
-          "Thank you for the playtest and bearing with it. (: ^2000",
+          "You realize that you got immersed unwillingly in my attempt to a create a cool dice and a simple story.^1000",
+          "Thank you for the playtest and bearing with it. (: ^1000",
           "Until we meet again. (release of my DnD project soonTM)",
         ],
         typeSpeed: 30,
@@ -220,16 +217,17 @@ export default class extends Controller {
           );
         },
       });
+      TYPED = x;
     }
 
     function averageRoll() {
-      new Typed("#typed", {
+      let x = new Typed("#typed", {
         strings: [
           "placeholder until i figure why it starts from the second one",
-          "While looking around some more you accidentally stepped on a bear trap.^2000",
-          "Why would there be a bear trap here?^2000",
-          `You suffer ${Math.floor(Math.random() * 20)} points of damage^2000`,
-          "You died.^2000 Better Luck next time.^2000",
+          "While looking around some more you accidentally stepped on a bear trap.^1000",
+          "Why would there be a bear trap here?^1000",
+          `You suffer ${Math.floor(Math.random() * 20 + 1)} points of damage^1000`,
+          "You died.^1000 Better Luck next time.^1000",
         ],
         typeSpeed: 30,
         loop: false,
@@ -241,14 +239,15 @@ export default class extends Controller {
           );
         },
       });
+      TYPED = x;
     }
 
     function poorRoll() {
-      new Typed("#typed", {
+      let x = new Typed("#typed", {
         strings: [
           "placeholder until i figure why it starts from the second one",
-          "Everything is perfectly normal.^2000",
-          "Nothing suspicious at all.^2000",
+          "Everything is perfectly normal.^1000",
+          "Nothing suspicious at all.^1000",
         ],
         typeSpeed: 30,
         loop: false,
@@ -258,6 +257,7 @@ export default class extends Controller {
           window.location.replace("https://stsiakal-portfolio.herokuapp.com/");
         },
       });
+      TYPED = x;
     }
 
     function displayChoices() {
