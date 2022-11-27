@@ -8,6 +8,7 @@ export let DICE_READY = false;
 export default class extends Controller {
   firstDay() {
     document.querySelector(".prologue").style.display = "none";
+    document.querySelector("p.text-speed").style.display = "none";
     let x = new Typed("#typed", {
       strings: [
         "You vaguely remember clicking this weird portfolio link.^1000",
