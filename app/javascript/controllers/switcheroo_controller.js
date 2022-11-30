@@ -5,7 +5,6 @@ export default class extends Controller {
   transform() {
     if (this.element.className === "") {
       this.element.classList.add("switched");
-      document.querySelector(".switch-wrap").style.display = "none";
       document.querySelector(".container-all").classList.add("fadeOut");
       document.querySelector(".nav-left").classList.add("fadeOut");
       setTimeout(returnHome, 3000);
